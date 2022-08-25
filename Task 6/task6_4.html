@@ -1,0 +1,59 @@
+﻿<!doctype html>
+<html>
+<head>
+	<meta charset=utf-8>
+	<title>Практическая работа 4</title>
+	<script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+	<script>
+		$(document).ready(function() {
+			$('div').mouseenter(function (){
+				$(this).css("background","yellow");
+				$('li:eq(2)').css('background', 'red');
+			});
+
+			$('div').click(function () {
+				if($('ul').is(":visible")){
+					$('ul').slideToggle(900);
+				}
+			});
+
+			$('div').mouseleave(function () {
+				if($('ul').is(":hidden")) {
+					$('ul').slideToggle(900);
+				}
+				$(this).css("background","");
+				$('li:eq(2)').css('background', '');
+			});
+		});
+	/** ЗАДАНИЕ 1
+		- Привяжите событие "mouseenter" к элементу <div>, при котором 
+			- цвет фона элемента <div> меняется на желтый
+			- у третьего элемента списка цвет фона меняется на красный
+	*/
+	/** ЗАДАНИЕ 2
+		- Привяжите событие "click" к элементу <div>, при котором список <ul> ПЛАВНО скрывается 
+	*/
+	/** ЗАДАНИЕ 3
+		- Привяжите событие "mouseleave" к элементу <div>, при котором 
+			- список <ul> ПЛАВНО показывается
+			- цвета	элемента <div> и третьего элемента списка возвращаются к первоначальному состоянию
+	*/	
+	</script>
+	<style> 
+		.mylist{}
+		.container{border: 1px solid green; height:100px}
+	</style>
+	</head>
+
+
+	<body>
+		<h1>Работаем с эффектами jQuery</h1>
+		<div id='container' class='container'>
+			<ul class="mylist"> 
+				<li>Позиция 1</li>
+				<li>Позиция 2</li> 
+				<li>Позиция 3</li>	
+			</ul>
+		</div>
+	</body>
+</html>
