@@ -1,0 +1,108 @@
+﻿<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Открытие новых окон и запись содержания</title>
+<style type="text/css">
+	html{
+		background:#fff;
+		font:16px calibri, sans-serif;
+		cursor:default;
+	}
+	p {
+		float:left;
+		margin:0 10px 0 0;
+		padding:15px;
+	}
+	.p1{
+		background:#ccf;
+	}
+	.p2{
+		background:#fcc;
+	}
+	.p3{
+		background:#cfc;
+	}
+</style>
+<script type="text/javascript">
+name = 'Это я его открыло!';
+let wnd; /* НОВОЕ ОКНО! */
+
+function openWnd() {
+	const width = 300;
+	const height = 200;
+
+	const left = (window.screen.availWidth - width) / 2;
+	const top = (window.screen.availHeight - height) / 2;
+
+	wnd = window.open("", "_blank", `width=${width},height=${height},left=${left},top=${top}`);
+
+	if (window.focus) {
+		wnd.focus();
+	}
+
+	/*	
+		1. Откройте новое окно со следующими параметрами:
+				ширина: 300, высота: 200
+				окно должно быть открыто строго по середине экрана
+		2. Передайте фокус созданному окну
+	*/
+}
+
+function writeToDocument() {
+	
+	if (!wnd) {
+		return;
+	}
+
+	let p = '<p>Текст параграфа</p>';
+	let style = '<style>html{background:#369;color:#fff;font:16px calibri, sans-serif;}</style>';
+	let script = '<script>alert(opener.name)' + '<' + '/script>';
+
+	let html = `<!DOCTYPE html>
+		<html lang="en">
+		<head>
+			<meta charset="UTF-8">
+			<meta http-equiv="X-UA-Compatible" content="IE=edge">
+			<meta name="viewport" content="width=device-width, initial-scale=1.0">
+			<title>Новое окно</title>
+			${style}
+			${script}
+		</head>
+		<body>
+			${p}
+		</body>
+	</html>`;
+
+	wnd.document.open();
+	wnd.document.write(html);
+	wnd.document.close();
+
+	/*
+		1. Запишите в документ дочернего окна содержание, 
+			состоящее из полного набора элементов, включая html, head, body, title
+		2. Включите в содержание элемент style с содержанием:
+				«html{background:#369;color:#fff;font:16px calibri, sans-serif;}»
+		3. Включите в содержание элемент p с содержанием «Текст параграфа»
+		4. Включите в содержание элемент script с содержанием «alert(opener.name)»
+	*/
+}
+
+function closeWnd() {
+	if (wnd && !wnd.closed) {
+		wnd.close();
+	}
+	
+	/*	
+		1. Проверьте, существует ли дочернее окно и не закрыто ли оно 
+		2. Если окно существует, то закройте его
+	*/
+}
+</script>
+</head>
+<body>
+<p class="p1"><a href="javascript:openWnd();">Открыть окно</a></p>
+<p class="p3"><a href="javascript:writeToDocument();">Заполнить окно</a></p>
+<p class="p2"><a href="javascript:closeWnd();">Закрыть окно</a></p>
+</body>
+</html>

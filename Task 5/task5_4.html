@@ -1,0 +1,55 @@
+﻿<!doctype html>
+
+<html>
+<head>
+	<title>Структура DOM</title>
+	<meta charset="utf-8">
+	<script type="text/javascript">
+
+		function showChildNodes(node, doc) {
+			switch (node.nodeType) {
+				case 3: {
+					doc.write('<li>' + node.nodeValue + '</' + 'li>' );
+					break;
+				}
+				case 1: {
+					doc.write('<li>' + node.nodeName + '</' + 'li><ul>' );
+					for (let child of node.childNodes) {
+						showChildNodes(child, doc);
+					}
+					doc.write('</' + 'ul>' + '</' + 'li>');
+					break;
+				}
+				default: {
+					break;
+				}
+			} 
+		}
+
+		function showDOM() {
+			let wnd = window.open("", "_blank", "popup");
+
+			wnd.document.open();
+			wnd.document.write(`<html><body>`);
+				
+			showChildNodes(document.documentElement, wnd.document);
+			
+			wnd.document.write('</' + 'body>' + '</' + 'html>');
+		}
+
+	</script>
+</head>
+
+<body>
+	<h1>Структура DOM</h1>
+	<div>
+		<h2>Вывод структуры DOM</h2>
+		<p>Этот код открывает новое окно и выводит в него структуру текущего документа</p>
+	</div>
+	<div>
+		<h2>Запуск кода</h2>
+		<p>Для запуска кода щелкните <a href="javascript:showDOM()">здесь</a></p>
+	</div>
+
+</body>
+</html>
