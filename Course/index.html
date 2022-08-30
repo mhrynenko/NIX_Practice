@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Spectral SC' rel='stylesheet'>
+    <link rel="stylesheet" href="./styles/style.css">
+    <title>Course Project</title>
+</head>
+<body>
+    <nav class="navbar navbar-expand-xxl">
+        
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent"
+                aria-controls="navbarContent" aria-expanded="false">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarContent">
+            <div class="container-fluid d-block nav-cont">
+                <div class="container-fluid d-flex top-header nav-text">
+                    <span class="navbar-text phone">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-telephone-fill" viewBox="0 0 16 16">
+                            <path fill-rule="evenodd" d="M1.885.511a1.745 1.745 0 0 1 2.61.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.678.678 0 0 0 .178.643l2.457 2.457a.678.678 0 0 0 .644.178l2.189-.547a1.745 1.745 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.634 18.634 0 0 1-7.01-4.42 18.634 18.634 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877L1.885.511z"/>
+                        </svg>
+                          +1(824)765 28 20
+                    </span>
+                    <span class="navbar-text address">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-geo-alt-fill" viewBox="0 0 16 16">
+                            <path d="M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10zm0-7a3 3 0 1 1 0-6 3 3 0 0 1 0 6z"/>
+                        </svg>
+                          г.Киев, ул.Петра Алексеева, д.6
+                    </span>
+                    <span class="navbar-text timetable">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-clock-fill" viewBox="0 0 16 16">
+                            <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM8 3.5a.5.5 0 0 0-1 0V9a.5.5 0 0 0 .252.434l3.5 2a.5.5 0 0 0 .496-.868L8 8.71V3.5z"/>
+                        </svg>
+                          Ежедневно с 10:00 до 19:00
+                    </span>
+                </div>
+                
+                <div class="container-fluid d-flex top-header nav-btns">
+                    <div class="container ul-nav-container">
+                        <ul class="navbar-nav nav-ul">
+                            <li class="nav-item">
+                                <a href="" class="nav-link">Каталог</a>
+                            </li>
+        
+                            <li class="nav-item">
+                                <a href="" class="nav-link">Оплата и доставка</a>
+                            </li>
+        
+                            <li class="nav-item">
+                                <a href="" class="nav-link">Бонусная программа</a>
+                            </li>
+        
+                            <li class="nav-item">
+                                <a href="" class="nav-link">О компании</a>
+                            </li>
+    
+                            <li class="nav-item">
+                                <a href="" class="nav-link">Контакты</a>
+                            </li>
+                        </ul>
+                    </div>
+                    
+    
+                    <a href="/" class="navbar-brand d-flex">
+                        <span>ХОББИ</span>
+                        <span>АРТ</span>
+                    </a>
+    
+                    <div class="container d-flex buttons-right">
+                        <form action="" class="search-cont d-flex">
+                            <input type="search" placeholder="Поиск товара">
+                            <button class="btn">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
+                                    <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
+                                </svg>
+                            </button>
+                        </form>
+        
+                        <button class="btn my-btn-nav">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-person-fill" viewBox="0 0 16 16">
+                                <path d="M3 14s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1H3zm5-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6z"/>
+                            </svg>
+                            Войти
+                        </button>
+                        <button class="btn my-btn-nav">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-heart-fill" viewBox="0 0 16 16">
+                                <path fill-rule="evenodd" d="M8 1.314C12.438-3.248 23.534 4.735 8 15-7.534 4.736 3.562-3.248 8 1.314z"/>
+                            </svg>
+                            Избранное
+                            <span class="amount">2</span>
+                        </button>
+                        <div class="btn my-btn-nav cart-btn" onclick="window.location.href='/cart.html'">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-basket3-fill" viewBox="0 0 16 16">
+                                    <path d="M5.757 1.071a.5.5 0 0 1 .172.686L3.383 6h9.234L10.07 1.757a.5.5 0 1 1 .858-.514L13.783 6H15.5a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5H.5a.5.5 0 0 1-.5-.5v-1A.5.5 0 0 1 .5 6h1.717L5.07 1.243a.5.5 0 0 1 .686-.172zM2.468 15.426.943 9h14.114l-1.525 6.426a.75.75 0 0 1-.729.574H3.197a.75.75 0 0 1-.73-.574z"/>
+                                </svg>
+                                Корзина
+                                <span class="amount">0</span>
+                            </a>
+                        </div>
+                    </div>
+                   
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container-fluid carousel-my">
+        <div class="carousel slide carousel-fade" id="carouselControls" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <div class="content">
+                        <div class="img-part">
+                            <img src="./img/macrametr3.png" alt="macrametr3">
+                        </div>
+                        <div class="descr-part">
+                            <span class="descr-title">
+                                ПРЯЖА MACRAMETR 1
+                            </span>
+                            <span class="descr-main">
+                                Повседневная практика показывает, что укрепление и развитие внутренней структуры обеспечивает широкому кругу (специалистов) участие в формировании форм воздействия.
+                            </span>
+                            <button class="btn pink-btn">В каталог</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="carousel-item">
+                    <div class="content">
+                        <div class="img-part">
+                            <img src="./img/macrametr3.png" alt="macrametr3">
+                        </div>
+                        <div class="descr-part">
+                            <span class="descr-title">
+                                ПРЯЖА MACRAMETR 2
+                            </span>
+                            <span class="descr-main">
+                                Повседневная практика показывает, что укрепление и развитие внутренней структуры обеспечивает широкому кругу (специалистов) участие в формировании форм воздействия.
+                            </span>
+                            <button class="btn pink-btn">В каталог</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="carousel-item">
+                    <div class="content">
+                        <div class="img-part">
+                            <img src="./img/macrametr3.png" alt="macrametr3">
+                        </div>
+                        <div class="descr-part">
+                            <span class="descr-title">
+                                ПРЯЖА MACRAMETR 3
+                            </span>
+                            <span class="descr-main">
+                                Повседневная практика показывает, что укрепление и развитие внутренней структуры обеспечивает широкому кругу (специалистов) участие в формировании форм воздействия.
+                            </span>
+                            <button class="btn pink-btn">В каталог</button>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+
+            <div class="control-btns">
+                <button class="btn carousel-item-btn" type="button" data-bs-target="#carouselControls" data-bs-slide="prev">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chevron-left" viewBox="0 0 16 16">
+                        <path fill-rule="evenodd" d="M11.354 1.646a.5.5 0 0 1 0 .708L5.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0z"/>
+                    </svg>
+                </button>
+    
+                <span class="counter"></span>
+                <button class="btn carousel-item-btn" type="button" data-bs-target="#carouselControls" data-bs-slide="next">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chevron-right" viewBox="0 0 16 16">
+                        <path fill-rule="evenodd" d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z"/>
+                    </svg>
+                </button>
+            </div>
+        </div>
+
+       
+    </div>
+
+    <div class="container-fluid middle-part d-block">
+        <nav class="road me-auto" style="--bs-breadcrumb-divider: url(&#34;data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='12'%3E%3Cpath fill-rule='evenodd' d='M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z' fill='%236c757d'/%3E%3C/svg%3E&#34;);" aria-label="breadcrumb">
+            <ol class="breadcrumb">
+              <li class="breadcrumb-item"><a href="#">Главная</a></li>
+              <li class="breadcrumb-item"><a href="#">Каталог</a></li>
+              <li class="breadcrumb-item active" aria-current="page">Макраме</li>
+            </ol>
+        </nav>
+
+        <div class="btns-from-to d-flex">
+            <button class="btn price-high-low gray-btn ms-auto" onclick="highToLow()" data-turn="false">
+                Цена
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-down" viewBox="0 0 16 16">
+                    <path fill-rule="evenodd" d="M8 1a.5.5 0 0 1 .5.5v11.793l3.146-3.147a.5.5 0 0 1 .708.708l-4 4a.5.5 0 0 1-.708 0l-4-4a.5.5 0 0 1 .708-.708L7.5 13.293V1.5A.5.5 0 0 1 8 1z"/>
+                </svg>
+            </button>
+            <button class="btn price-low-high gray-btn" onclick="lowToHigh()">
+                Цена
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-up" viewBox="0 0 16 16">
+                    <path fill-rule="evenodd" d="M8 15a.5.5 0 0 0 .5-.5V2.707l3.146 3.147a.5.5 0 0 0 .708-.708l-4-4a.5.5 0 0 0-.708 0l-4 4a.5.5 0 1 0 .708.708L7.5 2.707V14.5a.5.5 0 0 0 .5.5z"/>
+                </svg>
+            </button>
+        </div>
+    </div>
+
+    <div class="container-fluid main-part">
+        <div class="row flex-nowrap">
+            <div class="col-auto ">
+                <div class="flex-shrink-0 filters-menu">
+                    <div class="filters type">
+                        <span class="navbar-text">Тип изделий</span>
+                        <div class="list-group type" data-filterType="type">
+                            <label class="list-group-item">
+                                <input class="form-check-input me-1" type="checkbox" value="шпагат шнур веревка">
+                                    Шпагат, шнуры, веревки
+                            </label>
+            
+                            <label class="list-group-item">
+                                <input class="form-check-input me-1" type="checkbox" value="кольца бусины">
+                                    Кольца, бусины
+                            </label>
+            
+                            <label class="list-group-item">
+                                <input class="form-check-input me-1" type="checkbox" value="джут">
+                                    Джут
+                            </label>
+                        </div>
+                    </div>
+
+                    <hr>
+            
+                    <div class="filters compound">
+                        <span class="navbar-text">Состав</span>
+                        <div class="list-group compound" data-filterType="compound">
+                            <label class="list-group-item">
+                                <input class="form-check-input me-1" type="checkbox" value="хлопок">
+                                    Хлопок
+                            </label>
+            
+                            <label class="list-group-item">
+                                <input class="form-check-input me-1" type="checkbox" value="синтетика">
+                                    Синтетика
+                            </label>
+            
+                            <label class="list-group-item">
+                                <input class="form-check-input me-1" type="checkbox" value="с сердечником">
+                                    С сердечником
+                            </label>
+                        </div>
+                    </div>
+            
+                    <hr>
+
+                    <div class="filters diametr">
+                        <span class="navbar-text">Диаметр</span>
+                        <div class="list-group diametr" data-filterType="diametr">
+                            <label class="list-group-item">
+                                <input class="form-check-input me-1" type="checkbox" value="3 мм">
+                                    3 мм
+                            </label>
+            
+                            <label class="list-group-item">
+                                <input class="form-check-input me-1" type="checkbox" value="4 мм">
+                                    4 мм
+                            </label>
+            
+                            <label class="list-group-item">
+                                <input class="form-check-input me-1" type="checkbox" value="4,5 мм">
+                                    4,5 мм
+                            </label>
+            
+                            <label class="list-group-item">
+                                <input class="form-check-input me-1" type="checkbox" value="5 мм">
+                                    5 мм
+                            </label>
+                        </div>
+                    </div>
+            
+                    <hr>
+
+                    <div class="filters manufacturer">
+                        <span class="navbar-text">Производитель</span>
+                        <div class="list-group manufacturer" data-filterType="manufacturer">
+                            <label class="list-group-item" >
+                                <input class="form-check-input me-1" type="checkbox" value="Macrametr">
+                                    Macrametr
+                            </label>
+            
+                            <label class="list-group-item">
+                                <input class="form-check-input me-1" type="checkbox" value="Зефирка">
+                                    Зефирка
+                            </label>
+            
+                            <label class="list-group-item">
+                                <input class="form-check-input me-1" type="checkbox" value="Гамма">
+                                    Гамма
+                            </label>
+            
+                            <label class="list-group-item">
+                                <input class="form-check-input me-1" type="checkbox" value="Сибшнур">
+                                    Сибшнур
+                            </label>
+                        </div>
+                    </div>
+            
+                    <button class="btn pink-btn" onclick="applyFilters()">Показать</button>
+                    <button class="btn gray-btn" onclick="clearFilters()">Очистка</button>
+                    <span class="choosed">Подобрано <span>Х</span> товаров</span>
+                </div>
+            </div>
+            <div class="col py-3">
+                <div class="row row-cols-auto justify-content-center product-list"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <script src="/scripts/script.js"></script>
+</body>
+</html>

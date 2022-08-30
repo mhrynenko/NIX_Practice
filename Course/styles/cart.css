@@ -1,0 +1,130 @@
+hr {
+    width: 100%;
+}
+
+.check-position .photo {
+    min-width: 170px;
+    max-width: 200px;
+    min-height: 130px;
+    max-width: 170px; 
+}
+
+.check-position span {
+    height: min-content;
+}
+
+.check-position .trashcan {
+    width: 20px;
+    height: 20px;
+}
+
+.other-products h1 {
+    margin: 30px 0;
+}
+
+.other-products .card {
+    width: 245px;
+
+}
+
+.checkout {
+    width: 530px;
+    height: 345px;
+    padding: 35px;
+    border-radius: 20px;
+    background-color: #FAF9F9;
+    letter-spacing: 0em;
+    text-align: left;
+}
+
+.checkout .up span {
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 22px;
+}
+
+.checkout .down span {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 20px;
+}
+
+.checkout .total-cost {
+    font-size: 52px;
+    font-weight: 500;
+    line-height: 63px;
+}
+
+.bonus-count {
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 29px;
+    background: linear-gradient(102.48deg, #976464 -29.03%, #CFA5A5 97.75%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent; 
+    -moz-background-clip: text;
+    -moz-text-fill-color: transparent;
+}
+
+.counter-container {
+    position: relative;
+    min-width: 100px;
+    height: 50px;
+    margin: auto auto;
+}
+
+.counter {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    height: 80%;
+    max-width: 140px;
+    text-align: center;
+    
+    border-radius: 40px;
+    background-color: transparent;
+    border: 1px solid rgb(189,189,189);
+
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+
+    cursor:pointer;
+}
+
+.counter span {
+    color: rgb(156, 156, 156);
+    margin: auto 0;
+}
+
+.counter .count {
+    color: rgb(128, 128, 128);
+}
+
+.plus, .minus {
+    -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none;   /* Chrome/Safari/Opera */
+    -khtml-user-select: none;    /* Konqueror */
+    -moz-user-select: none;      /* Firefox */
+    -ms-user-select: none;
+}
+
+.minus:hover,
+.plus:hover{
+    color: black;
+}
+
+
+.line {
+    width: 100%;
+    border-bottom: 1px solid #EFEFEF;
+}
+
+.empty {
+    padding: 35px 15px 15px 15px;
+    box-shadow: 0px 0px 30px rgba(68, 68, 68, 0.05);
+    border-radius: 20px;
+    font-size: 20px;
+    text-align: center;
+}
